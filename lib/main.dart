@@ -40,7 +40,7 @@ class MeuCrachaApp extends StatelessWidget {
               // ===============================================================
               gradient: const LinearGradient(
                 colors: [
-                  // TODO: Primeira cor do gradiente,
+                  Colors.indigo,Colors.blueAccent
                   // TODO: Segunda cor do gradiente,
                 ],
                 begin: Alignment.topLeft,
@@ -114,16 +114,3 @@ class MeuCrachaApp extends StatelessWidget {
     );
   }
 }
-
-// ### Formulário de Coleta (Google Forms - 29/09)
-
-// No formulário de entrega, você aluno deve enviar:
-
-// 1. **Seu Nome Completo**
-
-// 2. **Link do Repositório GitHub:** `[https://github.com/USUARIO/prova_cracha_app](https://github.com/USUARIO/prova_cracha_app)`
-
-// 3. **Upload do arquivo `main.dart**`
-
-// 4. **Upload do Captura de Tela (Print)** do app rodando no servidor Debian (`http://<IP_DEBIAN>:8080`). Obs. Importante ! Caso NÃO funcione na porta 8080, troque a porta por outra, por exemplo, 8081....
-
