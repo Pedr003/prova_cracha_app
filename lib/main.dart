@@ -32,17 +32,14 @@ class MeuCrachaApp extends StatelessWidget {
               boxShadow: const [
                 BoxShadow(color: Colors.black26, blurRadius: 8),
               ],
-              
+
               // ===============================================================
               // DESAFIO 5 (3 PONTOS) - DECORAÇÃO E GRADIENTE
               // Configure o fundo com LinearGradient aplicando
               // Colors.indigo e Colors.blueAccent.
               // ===============================================================
               gradient: const LinearGradient(
-                colors: [
-                  Colors.indigo,
-                  Colors.blueAccent
-                ],
+                colors: [Colors.indigo, Colors.blueAccent],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
@@ -50,27 +47,28 @@ class MeuCrachaApp extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                
                 // ===============================================================
                 // DESAFIO 1 (3 PONTOS) - FOTO DE PERFIL
                 // Adicione a imagem via NetworkImage no CircleAvatar.
                 // ===============================================================
                 const CircleAvatar(
                   radius: 50,
-                  backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/199379159?v=4")
+                  backgroundImage: NetworkImage(
+                    "https://avatars.githubusercontent.com/u/199379159?v=4",
+                  ),
                 ),
-                
+
                 const SizedBox(height: 15),
-                
+
                 const Text(
-                  'Seu Nome Completo',
+                  'Pedro Otavio Ramos Lima',
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
                 ),
-                
+
                 // ===============================================================
                 // DESAFIO 2 (3 PONTOS) - ESTILIZAÇÃO E BIOGRAFIA
                 // Adicione a propriedade para fonte em itálico (fontStyle).
@@ -79,29 +77,29 @@ class MeuCrachaApp extends StatelessWidget {
                   'Desenvolvedor Mobile Flutter / SENAI',
                   style: TextStyle(
                     color: Colors.white70,
-                    // TODO: Inserir fontStyle: FontStyle.italic
+                    fontStyle: FontStyle.italic,
                   ),
                 ),
-                
+
                 const Divider(color: Colors.white38, height: 30),
-                
+
                 // ===============================================================
                 // DESAFIO 3 (3 PONTOS) - ALINHAMENTO DE SKILLS (ROW)
                 // Alinhe ao centro e crie os 3 Chips: 'Dart', 'Flutter', 'Git'.
                 // ===============================================================
                 const Row(
-                  // TODO: Adicionar mainAxisAlignment: MainAxisAlignment.center
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Chip(label: Text('Dart')),
                     SizedBox(width: 5),
-                    // TODO: Adicionar o Chip 'Flutter',
+                    Chip(label: Text('Flutter')),
                     SizedBox(width: 5),
-                    // TODO: Adicionar o Chip 'Git',
+                    Chip(label: Text('Git')),
                   ],
                 ),
-                
+
                 const SizedBox(height: 15),
-                
+
                 // ===============================================================
                 // DESAFIO 4 (3 PONTOS) - COMPILAÇÃO E ESTRUTURA
                 // Garanta que o projeto prova_cracha_app compila sem erros no Debian.
