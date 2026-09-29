@@ -40,8 +40,8 @@ class MeuCrachaApp extends StatelessWidget {
               // ===============================================================
               gradient: const LinearGradient(
                 colors: [
-                  Colors.indigo,Colors.blueAccent
-                  // TODO: Segunda cor do gradiente,
+                  Colors.indigo,
+                  Colors.blueAccent
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -57,7 +57,7 @@ class MeuCrachaApp extends StatelessWidget {
                 // ===============================================================
                 const CircleAvatar(
                   radius: 50,
-                  // TODO: Adicionar propriedade backgroundImage com NetworkImage
+                  backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/199379159?v=4")
                 ),
                 
                 const SizedBox(height: 15),
